@@ -1,0 +1,126 @@
+[17Sep2019 05:02:57.095] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20190829.143755, --fml.mcVersion, 1.14.4, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 28.1.0, --version, MOD_DEV, --assetIndex, 1.14, --assetsDir, C:\Users\Isaac\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ????????, --userProperties, {}]
+[17Sep2019 05:02:57.099] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 3.2.0+60+b86c1d4 starting: java version 1.8.0_221 by Oracle Corporation
+[17Sep2019 05:02:57.536] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[17Sep2019 05:02:58.276] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\Isaac\.gradle\caches\forge_gradle\assets, --assetIndex, 1.14, --username, Dev, --accessToken, ????????, --userProperties, {}]
+[17Sep2019 05:03:00.211] [Client thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[17Sep2019 05:03:10.676] [Client thread/WARN] [net.minecraft.client.GameSettings/]: Skipping bad option: lastServer:
+[17Sep2019 05:03:10.712] [Client thread/INFO] [net.minecraft.client.Minecraft/]: LWJGL Version: 3.2.2 build 10
+[17Sep2019 05:03:12.680] [modloading-worker-2/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 28.1.0, for MC 1.14.4 with MCP 20190829.143755
+[17Sep2019 05:03:12.681] [modloading-worker-2/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v28.1.0 Initialized
+[17Sep2019 05:03:12.728] [modloading-worker-9/INFO] [tutmodtutmod/]: Loading config: D:\Code\Minecraft\TutMod\run\config\tutmodtutmod-client.toml
+[17Sep2019 05:03:12.729] [modloading-worker-9/INFO] [tutmodtutmod/]: Built Config: D:\Code\Minecraft\TutMod\run\config\tutmodtutmod-client.toml
+[17Sep2019 05:03:12.729] [modloading-worker-9/INFO] [tutmodtutmod/]: Loaded config: D:\Code\Minecraft\TutMod\run\config\tutmodtutmod-client.toml
+[17Sep2019 05:03:12.730] [modloading-worker-9/INFO] [tutmodtutmod/]: Loading config: D:\Code\Minecraft\TutMod\run\config\tutmodtutmod-server.toml
+[17Sep2019 05:03:12.730] [modloading-worker-9/INFO] [tutmodtutmod/]: Built Config: D:\Code\Minecraft\TutMod\run\config\tutmodtutmod-server.toml
+[17Sep2019 05:03:12.731] [modloading-worker-9/INFO] [tutmodtutmod/]: Loaded config: D:\Code\Minecraft\TutMod\run\config\tutmodtutmod-server.toml
+[17Sep2019 05:03:12.868] [Client thread/INFO] [tutmodtutmod/]: Blocks registered
+[17Sep2019 05:03:12.874] [Client thread/INFO] [tutmodtutmod/]: Items registered
+[17Sep2019 05:03:15.624] [Client thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[17Sep2019 05:03:15.842] [Thread-1/FATAL] [net.minecraftforge.common.ForgeConfig/CORE]: Forge config just got changed on the file system!
+[17Sep2019 05:03:15.848] [modloading-worker-9/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/]: Exception caught during firing event: null
+	Index: 1
+	Listeners:
+		0: NORMAL
+		1: net.minecraftforge.eventbus.EventBus$$Lambda$1992/1704641164@3adaeb9d
+java.lang.NullPointerException
+	at chiizu.tutmod.world.OreGeneration.setupOreGeneration(OreGeneration.java:22)
+	at chiizu.tutmod.tutmod.setup(tutmod.java:63)
+	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212)
+	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204)
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258)
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.fireEvent(FMLModContainer.java:106)
+	at java.util.function.Consumer.lambda$andThen$0(Unknown Source)
+	at java.util.function.Consumer.lambda$andThen$0(Unknown Source)
+	at net.minecraftforge.fml.ModContainer.transitionState(ModContainer.java:112)
+	at net.minecraftforge.fml.ModList.lambda$null$10(ModList.java:133)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source)
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doInvoke(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.invoke(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateParallel(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateParallel(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at net.minecraftforge.fml.ModList.lambda$dispatchParallelEvent$11(ModList.java:133)
+	at java.util.concurrent.ForkJoinTask$AdaptedRunnableAction.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+[17Sep2019 05:03:15.850] [modloading-worker-9/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Caught exception during event FMLCommonSetupEvent dispatch for modid tutmodtutmod
+java.lang.NullPointerException: null
+	at chiizu.tutmod.world.OreGeneration.setupOreGeneration(OreGeneration.java:22) ~[main/:?]
+	at chiizu.tutmod.tutmod.setup(tutmod.java:63) ~[main/:?]
+	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:212) ~[eventbus-1.0.0-service.jar:?]
+	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:204) ~[eventbus-1.0.0-service.jar:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-1.0.0-service.jar:?]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.fireEvent(FMLModContainer.java:106) ~[?:28.1]
+	at java.util.function.Consumer.lambda$andThen$0(Unknown Source) ~[?:1.8.0_221]
+	at java.util.function.Consumer.lambda$andThen$0(Unknown Source) ~[?:1.8.0_221]
+	at net.minecraftforge.fml.ModContainer.transitionState(ModContainer.java:112) ~[?:?]
+	at net.minecraftforge.fml.ModList.lambda$null$10(ModList.java:133) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) ~[?:1.8.0_221]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) ~[?:1.8.0_221]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) ~[?:1.8.0_221]
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source) ~[?:1.8.0_221]
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source) ~[?:1.8.0_221]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) ~[?:1.8.0_221]
+	at java.util.concurrent.ForkJoinTask.doInvoke(Unknown Source) ~[?:1.8.0_221]
+	at java.util.concurrent.ForkJoinTask.invoke(Unknown Source) ~[?:1.8.0_221]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateParallel(Unknown Source) ~[?:1.8.0_221]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateParallel(Unknown Source) ~[?:1.8.0_221]
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source) ~[?:1.8.0_221]
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source) ~[?:1.8.0_221]
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source) ~[?:1.8.0_221]
+	at net.minecraftforge.fml.ModList.lambda$dispatchParallelEvent$11(ModList.java:133) ~[?:?]
+	at java.util.concurrent.ForkJoinTask$AdaptedRunnableAction.exec(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_221]
+[17Sep2019 05:03:15.947] [Server-Worker-7/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: Failed to complete lifecycle event SETUP, 1 errors found
+[17Sep2019 05:03:15.948] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[17Sep2019 05:03:15.948] [Server-Worker-7/FATAL] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: EventBus 0 shutting down - future events will not be posted.
+java.lang.Exception: stacktrace
+	at net.minecraftforge.eventbus.EventBus.shutdown(EventBus.java:278) ~[eventbus-1.0.0-service.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:97) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.startModLoading(ClientModLoader.java:105) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$onreload$3(ClientModLoader.java:87) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:95) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_221]
+[17Sep2019 05:03:16.257] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 28.1.0 Target: null
+[17Sep2019 05:03:16.307] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[17Sep2019 05:03:19.734] [Server-Worker-4/ERROR] [net.minecraftforge.fml.ModLoader/LOADING]: Skipping lifecycle event ENQUEUE_IMC, 1 errors found.
+[17Sep2019 05:03:19.734] [Server-Worker-4/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: Failed to complete lifecycle event ENQUEUE_IMC, 1 errors found
+[17Sep2019 05:03:19.734] [Server-Worker-4/FATAL] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: EventBus 0 shutting down - future events will not be posted.
+java.lang.Exception: stacktrace
+	at net.minecraftforge.eventbus.EventBus.shutdown(EventBus.java:278) ~[eventbus-1.0.0-service.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:97) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.finishModLoading(ClientModLoader.java:118) ~[?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$onreload$4(ClientModLoader.java:89) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniRun(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.CompletableFuture$UniRun.tryFire(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.CompletableFuture$Completion.exec(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_221]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_221]
+[17Sep2019 05:03:19.750] [Client thread/WARN] [net.minecraft.client.GameSettings/]: Skipping bad option: lastServer:
+[17Sep2019 05:03:19.833] [Client thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[17Sep2019 05:03:19.834] [Client thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[17Sep2019 05:03:19.977] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512 textures-atlas
+[17Sep2019 05:03:20.516] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256 textures/particle-atlas
+[17Sep2019 05:03:20.518] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256 textures/painting-atlas
+[17Sep2019 05:03:20.518] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128 textures/mob_effect-atlas
+[17Sep2019 05:04:08.066] [Client thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
