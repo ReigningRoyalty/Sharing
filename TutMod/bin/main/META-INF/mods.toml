@@ -1,0 +1,28 @@
+modLoader="javafml" #mandatory
+loaderVersion="[28,)" #mandatory
+credits="Thanks for this example mod goes to ma nigga daedae" #optional
+authors="R2" #optional
+
+[[mods]] #mandatory
+modId="tutmodtutmod" #mandatory
+version="0.1" #mandatory
+displayName="me mod" #mandatory
+description='''
+Shout out to all the niggas in the chat
+pullin long nights to make this shit 
+happen. This one's for y'all!
+'''
+
+[[dependencies.examplemod]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[28,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+    
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.14.4]"
+    ordering="NONE"
+    side="BOTH"

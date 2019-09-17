@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "tutmodtutmod:block/tut_ore"
+    }
+}
